@@ -3,7 +3,7 @@ version: '3'
 services:
   php-apache:
     image: registry.code.fbi.h-da.de/ewa_public/21ws_base_project/ewa_php-apache:latest
-    container_name: ewa_exam_php_apache
+    container_name: ewa_php_apache
     environment:
       TZ: "Europe/Berlin"
     ports:
@@ -11,13 +11,13 @@ services:
     volumes:
       - ./src:/var/www/html
     networks:
-      - EWA-EXAM-NETWORK
+      - EWA-NETWORK
     extra_hosts:
       - "host.docker.internal:host-gateway"
 
   mariadb:
     image: registry.code.fbi.h-da.de/ewa_public/21ws_base_project/ewa_mariadb:latest
-    container_name: ewa_exam_mariadb
+    container_name: ewa_mariadb
     volumes:
       - mariadb:/var/lib/mysql
       - ./mariadb/mariadb.setup:/docker-entrypoint-initdb.d
@@ -30,13 +30,13 @@ services:
       MYSQL_PASSWORD: "public"
     env_file: env.txt
     networks:
-      - EWA-EXAM-NETWORK      
+      - EWA-NETWORK      
 
   phpadmin:
     image: registry.code.fbi.h-da.de/ewa_public/21ws_base_project/ewa_phpmyadmin:latest
-    container_name: ewa_exam_phpmyadmin
+    container_name: ewa_phpmyadmin
     networks:
-      - EWA-EXAM-NETWORK
+      - EWA-NETWORK
     ports:
       - 127.0.0.1:8085:80
     environment:
@@ -48,6 +48,6 @@ volumes:
     mariadb:
     
 networks:
-    EWA-EXAM-NETWORK:
-        name: ewa_exam_net
+    EWA-NETWORK:
+        name: ewa_net
         driver: bridge

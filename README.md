@@ -1,7 +1,3 @@
-# EWA Examination Project
-This project is used for the examination of the lecture EWA at the computer science department of the Hochschule Darmstadt.
-It is very similar to the project that is used for the lab. There is only a new folder called "Exam" in the src-folder. Furthermore there is a folder called "Exam_Probe" for a test run of the examination in the lecture.
-
 # EWA Docker Setup
 You know about [Docker](https://www.docker.com) and Docker is running on your system? You do not want to mess up your system by installing a web server and all the fancy software you need for EWA?
 

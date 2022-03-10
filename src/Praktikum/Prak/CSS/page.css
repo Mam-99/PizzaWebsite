@@ -1,0 +1,175 @@
+
+/* Menu-bar */
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background: url('../Fotos/pizza-background.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+h1 {
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 5px;
+    font-size: 40px;
+    color: white;
+}
+
+.navigation-links {
+    display: inline-block;
+}
+
+.navigation {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.menu-item {
+    margin-right: 15px;
+    color: white;
+}
+
+.footer {
+    height: 100px;
+    width: 100%;
+    float: left;
+}
+
+/* Bestellungseite */
+.main {
+    background-color: whitesmoke;
+    width: 100%;
+}
+.pizza-menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.order-top {
+    width: 50%;
+    margin-left: 70px;
+}
+
+.Pizza {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: flex-start;
+    border: 1px solid black;
+    padding: 7px;
+}
+
+.Pizza p {
+    margin: 10px 0 0 40px;
+}
+
+p, label, div {
+    font-size: 18px;
+}
+
+.Pizza div {
+    align-self: center;
+}
+
+.speisekarte {
+    margin-left: 80px;
+    height: 20px;
+    padding-bottom: 5px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+section {
+    float: left;
+}
+
+.order-right {
+    margin-left: 40px;
+    width: 480px;
+}
+
+.order-right input {
+    margin-left: 10px;
+    width: 350px;
+    height: 30px;
+}
+
+.order-right button {
+    margin: 10px 0 0 10px;
+}
+
+#cart {
+    height: 100px;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+img {
+    border-radius: 50%;
+    border: none;
+}
+
+button {
+    padding: 3px;
+}
+
+.send-button {
+    margin: 0 110px 0 224px !important;
+    width: 150px;
+}
+
+/* Bäcker */
+h3 {
+    font-size: 26px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.backer-section {
+    margin-left: 33%;
+    width: 30% !important;
+    align-items: center;
+    background-color: whitesmoke;
+    padding: 20px;
+    border-radius: 30px;
+    border: none;
+}
+
+.pizza-baecker {
+    width: 100%;
+    text-align: center;
+}
+
+.pizza-baecker table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Lieferung */
+.pizza-fahrer {
+    width: 100%;
+    text-align: center;
+}
+
+.pizza-fahrer table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Kunde */
+.pizza-kunde {
+    width: 100%;
+    text-align: center;
+}
+
+.pizza-kunde table {
+    margin-left: auto;
+    margin-right: auto;
+}

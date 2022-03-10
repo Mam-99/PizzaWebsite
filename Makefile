@@ -2,7 +2,7 @@ start:
 	docker-compose up -d
 
 console:
-	docker exec -it ewa_exam_php_apache bash
+	docker exec -it ewa_php_apache bash
 
 stop:
 	docker-compose down
@@ -14,10 +14,13 @@ build:
 	docker-compose up -d
 
 clean:
-	docker rm --force ewa_exam_php_apache
-	docker rm --force ewa_exam_mariadb
-	docker rm --force ewa_exam_phpmyadmin
-	docker network rm ewa_exam_net
+	docker rm --force ewa_php_apache
+	docker rm --force ewa_mariadb
+	docker rm --force ewa_phpmyadmin
+	docker rm --force ewa2_php_apache
+	docker rm --force ewa2_mariadb
+	docker rm --force ewa2_phpmyadmin		
+	docker network rm ewa_net
 	
 cleanall:
 	docker system prune -a
